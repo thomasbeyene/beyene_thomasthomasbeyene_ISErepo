@@ -89,4 +89,31 @@ def RemoveNumericAndConvertOption():  # 4
         print("String cannot be converted")
 
 
+def ConvertNumberOption():  # 5
+    #Convert a number which represents a length given in meters to feet and vice versa and centimeter to inches and vice versa
+    inputFilename = str(input("Enter the input file name: "))
+    outputFilename = str(input("Enter the ouput file name: "))
 
+    try:
+
+        # open file to write
+        outFile = open(outputFilename, "w")
+
+        # open and read input file
+        inFile = open(inputFilename, "r")
+        for line in inFile:
+            for number in line.split():
+                try:
+                    num = float(number)
+                    outFile.write(str(num) + ' meters = ' + str(3.280839895 * num) + ' feet\n')
+                    outFile.write(str(num) + ' feet = '+ str( num / 3.280839895) + ' meters\n')
+                    outFile.write(str(num) + ' centimeters = '+ str( 0.39370 * num) + ' inches\n')
+                    outFile.write(str(num) + ' inches = '+ str( num / 0.39370) + ' centimeters\n')
+                except:
+                    pass
+
+        # close files
+        inFile.close()
+        outFile.close()
+    except:
+        print('I/O Error')
