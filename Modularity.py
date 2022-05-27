@@ -129,5 +129,34 @@ def menu():
     print('0. Exit')
     return input('> ')
 
+def main():
+    """
+    main function that show the menu, read the selection
+    and process it
+    """
+
+    # display menu and get the selection
+    selection = menu()
+
+    while selection != '0':
+
+        if selection == '1':  # Convert string to upper case/ lower case
+            convertStringOption()
+        elif selection == '2':  # Identify whether numeric values are in a given string
+            ContainsNumbericValueOption()
+        elif selection == '3':  # Identify whether a given string is a valid number or not
+            IsValidNumberOption()
+        elif selection == '4':  # Remove any numeric values in a given string and then convert the string to uppercase or lower Case
+            RemoveNumericAndConvertOption()
+        elif selection == '5':  # Convert a number which represents a length given in meters to feet and vice versa and centimeter to inches and vice versa
+            ConvertNumberOption()
+
+        # display menu and get the selection
+        print()
+        selection = menu()
+
+
+if __name__ == '__main__':
+    main()
 
 
