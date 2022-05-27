@@ -89,11 +89,10 @@ def RemoveNumericAndConvert(INPUT, upper_lower):
 
 def RemoveNumericAndConvertOption():  # 4
     INPUT = str(input("Enter string you want to remove and convert: "))
+    upper_lower = str(input("Do you want to convert the string to (U)pper or (L)ower case: ")).upper()
     OUTPUT = RemoveNumeric(INPUT)
 
-    convert_type = str(input("Do you want to convert the string to (U)pper or (L)ower case: ")).upper()
-
-    if convert_type == 'U' or convert_type == 'L':
+    if RemoveNumericAndConvert(INPUT, upper_lower):
         OUTPUT = convertString(OUTPUT, convert_type)
         print(OUTPUT)
     else:
