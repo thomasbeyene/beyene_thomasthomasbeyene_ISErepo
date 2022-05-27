@@ -43,20 +43,18 @@ def ContainsNumbericValueOption():  # 2
 
 def IsValidNumber(INPUT):  # 3
     #check if all digit in input string contain ['0':'9']
+    ValidNumber = True	
     numeric = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"]
 
     for i in INPUT:
         if i not in numeric:
-            return False
+            ValidNumber = False
 
-    return True
+    return ValidNumber
 
-def IsValidNumberOption():  # 3
-
-    """
-    check if string is valid number
-    :return: None
-    """
+def IsValidNumberOption():  # 3 
+    #check if string is valid number
+   
     INPUT = str(input("Enter string you want to check: "))
 
     if IsValidNumber(INPUT):
