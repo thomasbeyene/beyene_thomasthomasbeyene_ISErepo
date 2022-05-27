@@ -98,8 +98,24 @@ def RemoveNumericAndConvertOption():  # 4
     else:
         print("String cannot be converted")
 
+def ConvertLength(length, measurement):
+    output = float(length)
 
-def ConvertNumberOption():  # 5
+    if 0 <= measurement < 10: #metres -> feet
+        output = length * 3.280839895
+    elif 10 < measurement < 20: #feet -> metres
+        output = length / 3.280839895
+    elif 20 < measurement < 30: #cms -> inches
+        output = length / 2.54 
+    elif 30 < measurement < 40:  #inches -> cms
+        output = length * 2.54
+    else:
+        output = ValueError("Invalid measurement")
+
+    return output
+
+
+def ConvertLengthOption():  # 5
     #Convert a number which represents a length given in meters to feet and vice versa and centimeter to inches and vice versa
     inputFilename = str(input("Enter the input file name: "))
     outputFilename = str(input("Enter the ouput file name: "))
