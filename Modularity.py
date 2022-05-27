@@ -74,6 +74,18 @@ def RemoveNumeric(INPUT):  # 4
 
     return OUTPUT
 
+def RemoveNumericAndConvert(INPUT, upper_lower):
+    OUTPUT = ''
+
+    for i in INPUT:
+        if i not in INPUT:
+            OUTPUT += RemoveNumeric(INPUT)
+        else:
+            OUTPUT = INPUT
+        OUTPUT = convertString(INPUT, upper_lower)
+
+    return OUTPUT
+
 
 def RemoveNumericAndConvertOption():  # 4
     INPUT = str(input("Enter string you want to remove and convert: "))
