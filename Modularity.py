@@ -22,13 +22,14 @@ def convertStringOption():  # 1
 
 def ContainsNumbericValue(INPUT):  # 2
    # check if input string contains ['0':'9']
+    numbers = False
     numeric = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"]
 
     for i in INPUT:
         if i in numeric:
-            return True
+            numbers = True
 
-    return False
+    return numbers
 
 
 def ContainsNumbericValueOption():  # 2
