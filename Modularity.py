@@ -62,3 +62,31 @@ def IsValidNumberOption():  # 3
         print("The string is the value number.")
     else:
         print("The string is not the valid number.")
+
+
+def RemoveNumeric(INPUT):  # 4
+    #Remove any numeric values in a given string
+    OUTPUT = ''
+    numeric = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"]
+
+    for i in INPUT:
+        if i not in numeric:
+            OUTPUT += i
+
+    return OUTPUT
+
+
+def RemoveNumericAndConvertOption():  # 4
+    INPUT = str(input("Enter string you want to remove and convert: "))
+    OUTPUT = RemoveNumeric(INPUT)
+
+    convert_type = str(input("Do you want to convert the string to (U)pper or (L)ower case: ")).upper()
+
+    if convert_type == 'U' or convert_type == 'L':
+        OUTPUT = convertString(OUTPUT, convert_type)
+        print(OUTPUT)
+    else:
+        print("String cannot be converted")
+
+
+
