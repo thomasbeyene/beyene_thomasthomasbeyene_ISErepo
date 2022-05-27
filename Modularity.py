@@ -39,3 +39,26 @@ def ContainsNumbericValueOption():  # 2
     else:
         print("The string does not contain numeric value.")
 
+
+def IsValidNumber(INPUT):  # 3
+    #check if all digit in input string contain ['0':'9']
+    numeric = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"]
+
+    for i in INPUT:
+        if i not in numeric:
+            return False
+
+    return True
+
+def IsValidNumberOption():  # 3
+
+    """
+    check if string is valid number
+    :return: None
+    """
+    INPUT = str(input("Enter string you want to check: "))
+
+    if IsValidNumber(INPUT):
+        print("The string is the value number.")
+    else:
+        print("The string is not the valid number.")
