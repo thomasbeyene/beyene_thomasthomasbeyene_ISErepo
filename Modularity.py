@@ -117,3 +117,17 @@ def ConvertNumberOption():  # 5
         outFile.close()
     except:
         print('I/O Error')
+
+
+def menu():
+    print('1. Convert string to upper case/ lower case')
+    print('2. Identify whether numeric values are in a given string')
+    print('3. Identify whether a given string is a valid number or not')
+    print('4. Remove any numeric values in a given string and then convert the string to uppercase or lower Case')
+    print(
+        '5. Convert a number which represents a length given in meters to feet and vice versa and centimeter to inches and vice versa')
+    print('0. Exit')
+    return input('> ')
+
+
+
