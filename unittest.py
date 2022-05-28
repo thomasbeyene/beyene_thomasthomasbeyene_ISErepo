@@ -44,3 +44,13 @@ class testCases(unittest.TestCase):
         actual = string.IsValidNumber("Interstellar",)
         assert "Interstellar" == actual
 
+    def testRemoveNumNConvert(self):
+        actual = string.RemoveNumericAndConvert("3053", "U")
+        assert '' == actual
+        actual = string.RemoveNumericAndConvert("Beyene", "L")
+        assert "beyene" == actual
+        actual = string.RemoveNumericAndConvert("Thomas Beyene", "L")
+        assert "thomas beyene" == actual
+        actual = string.RemoveNumericAndConvert("Interstellar", "U")
+        assert "INTERSTELLAR" == actual
+
