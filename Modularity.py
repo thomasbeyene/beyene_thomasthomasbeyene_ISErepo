@@ -131,18 +131,18 @@ def ConvertLengthOption():  # 5
             for number in line.split():
                 try:
                     num = float(number)
-                    outFile.write(str(num) + ' meters = ' + str(3.280839895 * num) + ' feet\n')
-                    outFile.write(str(num) + ' feet = '+ str( num / 3.280839895) + ' meters\n')
-                    outFile.write(str(num) + ' centimeters = '+ str( 0.39370 * num) + ' inches\n')
-                    outFile.write(str(num) + ' inches = '+ str( num / 0.39370) + ' centimeters\n')
+                    outFile.write(str(num) + ' meters = ' + str(ConvertLength(num, 9)) + ' feet\n')
+                    outFile.write(str(num) + ' feet = '+ str(ConvertLength(num, 19)) + ' meters\n')
+                    outFile.write(str(num) + ' centimeters = '+ str(ConvertLength(num, 29)) + ' inches\n')
+                    outFile.write(str(num) + ' inches = '+ str(ConvertLength(num, 39)) + ' centimeters\n')
                 except:
-                    pass
+                    raise IOError
 
         # close files
         inFile.close()
         outFile.close()
     except:
-        print('I/O Error')
+        raise IOError
 
 
 def menu():
