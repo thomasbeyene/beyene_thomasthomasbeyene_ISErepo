@@ -33,3 +33,14 @@ class testCases(unittest.TestCase):
         assert False == actual
         actual = string.IsValidNumber("Interstellar",)
         assert False == actual
+
+    def testRemoveNum(self):
+        actual = string.IsValidNumber("3053")
+        assert '' == actual
+        actual = string.IsValidNumber("Beyene")
+        assert "Beyene" == actual
+        actual = string.IsValidNumber("Thomas Beyene")
+        assert "Thomas Beyene" == actual
+        actual = string.IsValidNumber("Interstellar",)
+        assert "Interstellar" == actual
+
