@@ -175,7 +175,7 @@ def main():
         elif selection == '4':  # Remove any numeric values in a given string and then convert the string to uppercase or lower Case
             RemoveNumericAndConvertOption()
         elif selection == '5':  # Convert a number which represents a length given in meters to feet and vice versa and centimeter to inches and vice versa
-            ConvertNumberOption()
+            ConvertLengthOption()
 
         # display menu and get the selection
         print()
