@@ -14,3 +14,13 @@ class testCases(unittest.TestCase):
         actual = string.convertString("Interstellar", "O")
         assert "String cannot be converted" == actual
 
+    def testcontainsNumValues(self):
+        actual = string.ContainsNumbericValue("3053")
+        assert True == actual
+        actual = string.ContainsNumbericValue("Beyene")
+        assert False == actual
+        actual = string.ContainsNumbericValue("Thomas Beyene")
+        assert False == actual
+        actual = string.ContainsNumbericValue("Interstellar",)
+        assert False == actual
+
