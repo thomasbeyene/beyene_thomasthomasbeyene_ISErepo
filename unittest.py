@@ -24,3 +24,12 @@ class testCases(unittest.TestCase):
         actual = string.ContainsNumbericValue("Interstellar",)
         assert False == actual
 
+    def testIsValidNum(self):
+        actual = string.IsValidNumber("3053")
+        assert True == actual
+        actual = string.IsValidNumber("Beyene")
+        assert False == actual
+        actual = string.IsValidNumber("Thomas Beyene")
+        assert False == actual
+        actual = string.IsValidNumber("Interstellar",)
+        assert False == actual
