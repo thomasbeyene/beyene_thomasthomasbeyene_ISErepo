@@ -80,11 +80,9 @@ def RemoveNumericAndConvert(INPUT, upper_lower):
     OUTPUT = ''
 
     for i in INPUT:
-        if i not in INPUT:
-            OUTPUT += RemoveNumeric(INPUT)
-        else:
-            OUTPUT = INPUT
-        OUTPUT = convertString(INPUT, upper_lower)
+        if i not in ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"]:
+            OUTPUT += i   
+    OUTPUT = convertString(INPUT, upper_lower)
 
     return OUTPUT
 
@@ -114,7 +112,7 @@ def ConvertLength(length, measurement):
     else:
         output = ValueError("Invalid measurement")
 
-    return output
+    return str(round(output,2))
 
 
 def ConvertLengthOption():  # 5
