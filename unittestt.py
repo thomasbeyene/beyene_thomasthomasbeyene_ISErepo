@@ -35,13 +35,13 @@ class testCases(unittest.TestCase):
         assert False == actual
 
     def testRemoveNum(self):
-        actual = string.IsValidNumber("3053")
+        actual = string.RemoveNumeric("3053")
         assert '' == actual
-        actual = string.IsValidNumber("Beyene")
+        actual = string.RemoveNumeric("Beyene")
         assert "Beyene" == actual
-        actual = string.IsValidNumber("Thomas Beyene")
+        actual = string.RemoveNumeric("Thomas Beyene")
         assert "Thomas Beyene" == actual
-        actual = string.IsValidNumber("Interstellar",)
+        actual = string.RemoveNumeric("Interstellar",)
         assert "Interstellar" == actual
 
     def testRemoveNumNConvert(self):
