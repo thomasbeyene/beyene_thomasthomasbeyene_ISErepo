@@ -1,5 +1,5 @@
 import unittest
-import string
+import Modularity as string
 
 class testCases(unittest.TestCase): 
     def testconvertString(self):
