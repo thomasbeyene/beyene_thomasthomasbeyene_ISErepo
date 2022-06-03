@@ -4,9 +4,11 @@ def convertString(INPUT, upper_lower):  # 1
 
     if upper_lower == 'U' or upper_lower == 'u':
         OUTPUT = INPUT.upper()
-    else:
+    elif upper_lower == 'L' or upper_lower == 'l':
         OUTPUT = INPUT.lower()
-
+    else:
+        OUTPUT = 'String cannot be converted'
+    
     return OUTPUT
 
 def convertStringOption():  # 1
