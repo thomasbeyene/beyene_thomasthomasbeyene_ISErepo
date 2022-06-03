@@ -93,7 +93,7 @@ def RemoveNumericAndConvertOption():  # 4
     OUTPUT = RemoveNumeric(INPUT)
 
     if RemoveNumericAndConvert(INPUT, upper_lower):
-        OUTPUT = convertString(OUTPUT, convert_type)
+        OUTPUT = convertString(OUTPUT, upper_lower)
         print(OUTPUT)
     else:
         print("String cannot be converted")
@@ -110,7 +110,7 @@ def ConvertLength(length, measurement):
     elif 30 < measurement < 40:  #inches -> cms
         output = length * 2.54
     else:
-        output = ValueError("Invalid measurement")
+        return "Invalid measurement"
 
     return str(round(output,2))
 
