@@ -17,4 +17,31 @@ Once the program started, menu options are displayed, the user can make a select
 The programs achieves high cohesion as the code that can be easily reused. This is shown in the removeNumericNConvert function reusing the removeNumeric() function. Some functionalities from each category will have many functions within it that it calls upon. This is to avoid poor cohesion within the code.
 
 
-Use of parameters and return values within functions to avoid global variables. It results in an increase in coupling however there isn’t a high number of parameters (max. 2) for each functions. 
+Use of parameters and return values within functions to avoid global variables. It results in an increase in coupling however there isn’t a high number of parameters (max. 2) for each functions.
+
+Checklist:
+Are each functionality is defined as a separate function? 
+Yes - each functionality has their own function
+
+Is the code well organised in terms of placement of components?
+Yes
+
+Are functions using return values?
+Yes
+
+Are there any variables that have not been initialised?
+No
+
+
+Are functions performing its task without any errors?
+Yes
+
+Is there any repeated and unneccessary code?
+Yes in RemoveNumericAndConvertOption() - can call the convertString() function inside it instead of having repeated code. 
+
+
+Are there any global variables?
+No
+
+Refactoring was done for RemoveNumericAndConvertOption function. Firstly I created a function called RemoveNumericAndConvert which takes in variables and is called in the RemoveNumericAndConvertOption function. Additionally I modified the ConvertLengthOption(), by writing a function for the conversion of lengths called ConvertLength() and separating the write and read operations into the ConvertLengthOption where it can call the ConvertLength() function.
+
