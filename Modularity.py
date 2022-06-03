@@ -103,11 +103,11 @@ def ConvertLength(length, measurement):
 
     if 0 <= measurement < 10: #metres -> feet
         output = length * 3.280839895
-    elif 10 < measurement < 20: #feet -> metres
+    elif 10 <= measurement < 20: #feet -> metres
         output = length / 3.280839895
-    elif 20 < measurement < 30: #cms -> inches
+    elif 20 <= measurement < 30: #cms -> inches
         output = length / 2.54 
-    elif 30 < measurement < 40:  #inches -> cms
+    elif 30 <= measurement < 40:  #inches -> cms
         output = length * 2.54
     else:
         return "Invalid measurement"
