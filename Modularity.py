@@ -80,9 +80,9 @@ def RemoveNumericAndConvert(INPUT, upper_lower):
     OUTPUT = ''
 
     for i in INPUT:
-        if i not in ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"]:
-            OUTPUT += i   
-    OUTPUT = convertString(INPUT, upper_lower)
+        if i not in ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9']:
+            OUTPUT += i
+    OUTPUT = convertString(OUTPUT, upper_lower)
 
     return OUTPUT
 
