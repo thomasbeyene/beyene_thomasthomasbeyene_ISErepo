@@ -140,6 +140,13 @@ Testing:
 
 ##"Remove any numeric values in a given string."
 
-
 ![Testcase - RemoveNumeric](RemoveNumeric.png)
+
+##Submodule: IsValidNumber()
+##Imports: INPUT(str)
+##Exports: numbers(bool)
+
+##"Identify whether numeric values are in a given string"
+
+![Testcase - ValidNumber](ValidNumber.png)
 
