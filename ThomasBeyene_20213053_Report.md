@@ -110,3 +110,28 @@ In Category 2, the functionalities performs conversion of measurements:
 Converting a number which represents a length given in meters to feet and vice versa and centimetres to inches and vice versa. 
 The functionality operates by taking in an input file in which the conversions meters to feet, feet to meters, centimetres to inches and inches to centimetres are done
 
+Testing:
+
+Converting a given string to upper case or lower case.
+
+Equivalence Partitioning:
+
+Submodule: convertString()
+Imports: INPUT(str), upper_lower(str)
+Exports: OUTPUT (str)
+
+"Identify whether numeric values are in a given input parameter."
+
+#Converting a given string to upper case or lower case.
+
+#Equivalence Partitioning:
+
+##Submodule: convertString()
+##Imports: INPUT(str), upper_lower(str)
+##Exports: OUTPUT (str)
+
+##"Identify whether numeric values are in a given input parameter."
+
+
+![Testcase - ConvertString](Submodule convertString().png)
+
