@@ -54,3 +54,25 @@ class testCases(unittest.TestCase):
         actual = string.RemoveNumericAndConvert("Interstellar", "U")
         assert "INTERSTELLAR" == actual
 
+    def testConvertLengthBva(self):
+        #Invalid
+        actual = string.ConvertLength(100, -1)
+        assert "Invalid measurement" == actual
+        #metres to feet
+        actual = string.ConvertLength(100, 0)
+        assert "328.08" == actual
+        #feet to metres
+        actual = string.ConvertLength(100, 10)
+        assert "30.48" == actual
+        #cms to inches
+        actual = string.ConvertLength(100, 20)
+        assert "39.37" == actual
+        #inches to cms
+        actual = string.ConvertLength(100, 30)
+        assert "254.0" == actual
+        #Invalid
+        actual = string.ConvertLength(100, 40)
+        assert "Invalid measurement" == actual
+
+if __name__ == '__main__':
+    testCases()
