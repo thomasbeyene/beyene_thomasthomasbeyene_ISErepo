@@ -1,7 +1,9 @@
+import imp
 import unittest
 import sys
 import io
-from ModularityConv import IsValidNumber, convertString
+import Modularity
+from Modularity import IsValidNumber, convertString
 
 class WhiteBoxConvertStr(unittest.TestCase):
     def setUp(self):
