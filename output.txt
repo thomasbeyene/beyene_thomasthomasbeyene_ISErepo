@@ -1,0 +1,16 @@
+12.0 meters = 39.37 feet
+12.0 feet = 3.66 meters
+12.0 centimeters = 4.72 inches
+12.0 inches = 30.48 centimeters
+100.0 meters = 328.08 feet
+100.0 feet = 30.48 meters
+100.0 centimeters = 39.37 inches
+100.0 inches = 254.0 centimeters
+43.0 meters = 141.08 feet
+43.0 feet = 13.11 meters
+43.0 centimeters = 16.93 inches
+43.0 inches = 109.22 centimeters
+5.0 meters = 16.4 feet
+5.0 feet = 1.52 meters
+5.0 centimeters = 1.97 inches
+5.0 inches = 12.7 centimeters
