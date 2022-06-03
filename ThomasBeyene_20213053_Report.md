@@ -150,3 +150,10 @@ Testing:
 
 ![Testcase - ValidNumber](ValidNumber.png)
 
+##Submodule: RemoveNumericAndConvert()
+##Imports: INPUT(str), upper_lower(str)
+##Exports: OUTPUT(str)
+
+##Remove any numeric values in a given string
+
+![Testcase - RemoveNumericAndConvert](RemoveNumericAndConvert.png)
