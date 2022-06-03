@@ -123,5 +123,23 @@ Testing:
 ##"Identify whether numeric values are in a given input parameter."
 
 
-![Testcase - ConvertString](Submodule convertString().png)
+![Testcase - ConvertString](convertString.png)
+
+##Submodule: ContainsNumbericValue()
+##Imports: INPUT(str)
+##Exports: numbers(bool)
+
+##"Identify whether numeric values are in a given string."
+
+
+![Testcase - ContainsNumbericValue]( ContainsNumbericValue.png)
+
+##Submodule: RemoveNumeric()
+##Imports: INPUT(str)
+##Exports: OUTPUT(str)
+
+##"Remove any numeric values in a given string."
+
+
+![Testcase - RemoveNumeric](RemoveNumeric.png)
 
