@@ -112,16 +112,6 @@ The functionality operates by taking in an input file in which the conversions m
 
 Testing:
 
-Converting a given string to upper case or lower case.
-
-Equivalence Partitioning:
-
-Submodule: convertString()
-Imports: INPUT(str), upper_lower(str)
-Exports: OUTPUT (str)
-
-"Identify whether numeric values are in a given input parameter."
-
 #Converting a given string to upper case or lower case.
 
 #Equivalence Partitioning:
