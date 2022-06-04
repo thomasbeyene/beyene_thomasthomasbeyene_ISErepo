@@ -207,3 +207,12 @@ This evidence reveals that developing software systems without clearly consideri
 This should be a focus within the early stages of software development. This is done by implementing ACS Ethical guidelines when developing the software. For example developers have the duty to identify and understand the vulnerability of such hazardous requirements, making sure that they are securely operated. This is by having rigorous and comprehensive testing for the programs, to ensure public safety. 
 
 There should also be a clear, concise software development plan by the software team, where ethical concerns, are addressed in early stages of the life cycle.  They should ensure there are honest, hard-working developers who are willing to learn and improve, which builds a place for shared values and reliance, not working for monetary gains. Additionally ensure there are backup plans in case something goes wrong, this ensures there isn’t a long waiting time for patients as development process could become tedious. This therefore ensures public interest are in check, as waiting times are faster for patients. Not implementing ethical guidelines within the software may lead to software that could fail to fulfils societal value and may cause damage to the public.
+
+
+##Discussion:
+
+Overall I was pleased with the overall completion of my assignment, I feel that I completed all tasks well, except for version control task, especially with the assignment being a lot tougher than I expected. 
+
+
+All the production code managed to run as expected and I managed to make all my tests pass which I am pleased about. I feel like I could have elaborated more about my code and modularity in my report and that I would work on for my future assignments
+
