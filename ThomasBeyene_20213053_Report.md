@@ -186,4 +186,11 @@ Identify whether numeric values are in a given string.
 
 ![Testcase - IsValidNumber()](WhiteBox2.png)
 
+##Test implementation and execution:
+
+![Testcase - Testcases](TestCase.png)
+
+The test cases implemented are in two different files, ModularityUnitTest.py and WhiteBoxTest.py. ModularityUnitTest.py - contains the equivalence partitioning and boundary value analysis unit test cases and the WhiteBoxTest.py contains the white box unit test cases. To test the code enter python3 -m unittest ModularityUnitTest.py and python3 -m unittest WhiteBoxTest.pypython3 -m unittest WhiteBoxTest.py. All the test conducted were successful
+
+![Testcase - Testing](Testing.png)
 
