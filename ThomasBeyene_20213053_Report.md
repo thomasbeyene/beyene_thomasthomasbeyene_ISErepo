@@ -167,3 +167,23 @@ Remove any numeric values in a given string
 Converting a number which represents a length given in meters to feet and vice versa and centimetres to inches and vice versa – Boundaries between the different measurement conversions.
 
 ![Testcase - ConvertLength()](ConvertLength.png)
+
+##White Box Testing:
+
+###Submodule: convertString()
+###Imports: INPUT(str), upper_lower(str)
+###Exports: OUTPUT (str)
+
+"Identify whether numeric values are in a given input parameter."
+
+![Testcase - ConvertString()](WhiteBox1.png)
+
+###Submodule: IsValidNumber()
+###Imports: INPUT(str)
+###Exports: ValidNumber(bool)
+
+Identify whether numeric values are in a given string.
+
+![Testcase - IsValidNumber()](WhiteBox2.png)
+
+
