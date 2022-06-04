@@ -194,3 +194,16 @@ The test cases implemented are in two different files, ModularityUnitTest.py and
 
 ![Testcase - Testing](Testing.png)
 
+##Ethics:
+
+A scenario the code designed can be used in a large software project is implementing electronic healthcare records. There could be a lack of ethical and professional in this scenario as the software engineering team doesn’t adhere to  having a honest approach as they don’t complete the code to the required standard and therefore didn’t write comprehensive test cases as they believe the program is to the required standards. Unfortunately there was a bug that didn’t remove any numeric values within given information as the team forget to complete the loop statement. The software engineering team didn’t comprehensively  tests 
+
+This causes inaccuracy in data within the electronic health records, which were found within medical prescriptions, physical examination analysis, dosage amounts, etc. This is very dangerous as it could even risk patients lives, for example patients are prescribed medicine that they are allergic to. It increases the liability for clinicians and organisations. This has negative impacts on stakeholders, less people trust the validity of these health organisations.
+
+
+This evidence reveals that developing software systems without clearly considering ethical concerns, especially in the early phase of software development life cycle phases, i.e., requirements engineering, may lead to software that could fail to fulfils societal value and may cause damage to the public at large
+
+
+This should be a focus within the early stages of software development. This is done by implementing ACS Ethical guidelines when developing the software. For example developers have the duty to identify and understand the vulnerability of such hazardous requirements, making sure that they are securely operated. This is by having rigorous and comprehensive testing for the programs, to ensure public safety. 
+
+There should also be a clear, concise software development plan by the software team, where ethical concerns, are addressed in early stages of the life cycle.  They should ensure there are honest, hard-working developers who are willing to learn and improve, which builds a place for shared values and reliance, not working for monetary gains. Additionally ensure there are backup plans in case something goes wrong, this ensures there isn’t a long waiting time for patients as development process could become tedious. This therefore ensures public interest are in check, as waiting times are faster for patients. Not implementing ethical guidelines within the software may lead to software that could fail to fulfils societal value and may cause damage to the public.
