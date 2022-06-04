@@ -156,7 +156,7 @@ The functionality operates by taking in an input file in which the conversions m
 
 Remove any numeric values in a given string
 
-![Testcase - RemoveNumericAndConvert](RemoveNumericAndConvert.png)
+![Testcase - RemoveNumericAndConvert()](RemoveNumericAndConvert.png)
 
 ##Boundary Value Analysis: 
 
@@ -165,3 +165,5 @@ Remove any numeric values in a given string
 ###Exports: output(float)
 
 Converting a number which represents a length given in meters to feet and vice versa and centimetres to inches and vice versa – Boundaries between the different measurement conversions.
+
+![Testcase - ConvertLength()](ConvertLength.png)
