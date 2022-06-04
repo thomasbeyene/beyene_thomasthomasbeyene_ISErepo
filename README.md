@@ -1,6 +1,5 @@
 # beyene_thomasthomasbeyene_ISErepo
 
-Files:
 
 Documents:
 - ThomasBeyene_20213053_Report.md: Report for this Project
